@@ -4,6 +4,18 @@
         <title>Dealership</title>
     </head>
     <body>
-        <h3>Dealership</h3>
+        <h1>Dealership</h1>
+
+        
+        <div th:switch="${budget}">
+            <p th:case="'4000'">Sorry. We don't have any cars below $5,000</p>
+            <p th:case="'5000'">Toyota Corolla: $5,000</p>
+            <p th:case="'6000'">Volkswagen Jetta: $6,000</p>
+            <p th:case="'7000'">Ford Escape: $7,000</p>
+            <p th:case="'8000'">Honda Civic: $8,000</p>
+            <p th:case="''">No cars match your query!</p>
+        </div>
+
+
     </body>
 </html>
