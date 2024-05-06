@@ -1,0 +1,3 @@
+Build a package to for the Project
+Start the service: java -jar Package.jar
+URL: localhost:9090
